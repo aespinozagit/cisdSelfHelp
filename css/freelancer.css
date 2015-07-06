@@ -15,7 +15,9 @@ p {
 p.small {
     font-size: 16px;
 }
-
+.top {
+    font-size: 2em;
+}
 a,
 a:hover,
 a:focus,
@@ -36,8 +38,8 @@ h6 {
     font-weight: 700;
 }
 
-hr.star-light,
-hr.star-primary {
+hr.star-light, hr.phone,
+hr.star-primary, hr.exclamation, hr.question {
     margin: 25px auto 30px;
     padding: 0;
     max-width: 250px;
@@ -57,20 +59,50 @@ hr.star-primary:after {
     font-size: 2em;
 }
 
-hr.star-light {
+hr.phone:after {
+    content: "\f095";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.exclamation:after {
+    content: "\f12a";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.question:after {
+    content: "\f128";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.star-light, hr.exclamation, hr.question {
     border-color: #fff;
 }
 
-hr.star-light:after {
+hr.star-light:after, hr.exclamation:after, hr.question:after {
     color: #fff;
     background-color: #18bc9c;
 }
 
-hr.star-primary {
+hr.star-primary, hr.phone {
     border-color: #2c3e50;
 }
 
-hr.star-primary:after {
+hr.star-primary:after, hr.phone:after {
     color: #2c3e50;
     background-color: #fff;
 }
