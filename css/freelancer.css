@@ -27,6 +27,7 @@ a.active {
     color: #18bc9c;
 }
 
+
 h1,
 h2,
 h3,
@@ -447,6 +448,7 @@ footer .footer-below {
 
 .portfolio-modal .modal-content h2 {
     margin: 0;
+    margin-top: .5em;
     font-size: 3em;
 }
 
